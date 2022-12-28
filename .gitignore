@@ -2,6 +2,8 @@
 logs
 *.log
 npm-debug.log*
+design
+assets
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
