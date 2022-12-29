@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AECA,AAAA,CAAC,EAAC,OAAO,EAAC,QAAQ,CAAA;EACd,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAGD,AAAA,IAAI,CAAA;EACA,gBAAgB,EDHN,OAAmB;CCIhC",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "partiales/_color.scss",
+        "partiales/_general.scss"
     ],
     "names": [],
     "file": "main.css"
