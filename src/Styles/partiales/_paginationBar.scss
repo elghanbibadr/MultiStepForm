@@ -1,0 +1,7 @@
+.paginationBar{
+    background-color: white;
+    height: 80px;
+   @include desktop{
+    grid-column: 2;
+   }
+}

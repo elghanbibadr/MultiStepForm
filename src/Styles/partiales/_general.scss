@@ -16,6 +16,13 @@ body{
 }
 
 .container{
-    max-width:100rem ;
+    
+    max-width:110rem ;
     margin-inline: auto;
+    @include desktop{
+        display: grid;
+        grid-template-columns: 0.8fr 2fr;
+        margin-block: 3rem;
+        background-color: white;
+      }
 }

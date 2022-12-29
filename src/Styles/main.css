@@ -15,8 +15,19 @@ body {
 }
 
 .container {
-  max-width: 100rem;
+  max-width: 110rem;
   margin-inline: auto;
+}
+
+@media screen and (min-width: 970px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.8fr 2fr;
+        grid-template-columns: 0.8fr 2fr;
+    margin-block: 3rem;
+    background-color: white;
+  }
 }
 
 body {
@@ -86,6 +97,10 @@ p {
 
 @media screen and (min-width: 970px) {
   .stepTracker {
+    height: 100%;
+    border-radius: 10px;
+    background-position: 0;
+    grid-row: span 2;
     background-image: url("/public/images/bg-sidebar-desktop.svg");
   }
 }
@@ -109,5 +124,40 @@ p {
   font-size: 1.6rem;
   font-weight: bold;
   color: white;
+}
+
+.stepsContent {
+  background-color: white;
+  height: 400px;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  position: relative;
+  bottom: 70px;
+  -webkit-box-shadow: 0 10px 30px rgba(204, 204, 204, 0.666);
+          box-shadow: 0 10px 30px rgba(204, 204, 204, 0.666);
+}
+
+@media screen and (min-width: 970px) {
+  .stepsContent {
+    bottom: 0;
+    left: -10px;
+    z-index: -5555;
+    height: 540px;
+    margin: 0;
+    overflow: hidden;
+  }
+}
+
+.paginationBar {
+  background-color: white;
+  height: 80px;
+}
+
+@media screen and (min-width: 970px) {
+  .paginationBar {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
 }
 /*# sourceMappingURL=main.css.map */
