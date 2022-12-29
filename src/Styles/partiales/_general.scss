@@ -5,7 +5,18 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+    
+
 
 body{
-    background-color:  $Pastelblue;
+    background-color:  $Magnolia;
+    color: red;
+}
+
+.container{
+    max-width:100rem ;
+    margin-inline: auto;
 }
