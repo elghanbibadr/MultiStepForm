@@ -1,8 +1,12 @@
+import { AppContextProvider } from "./Store/AppContext"
+import Button from "./Componenet/General/Button"
 
 function App() {
-
+  
   return (
-    <h1>hello</h1>
+    <AppContextProvider>
+      <Button />
+    </AppContextProvider>
   )
 }
 
