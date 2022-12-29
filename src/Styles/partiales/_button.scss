@@ -1,0 +1,27 @@
+.btn{
+    padding: 14px 16px ;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: .7px;
+    transition: 0.3s ease background;
+}
+
+
+
+.btn--marineBlue{
+    background-color: $Marineblue;
+    &:hover{
+      background-color: hsl(213, 62%, 29%);
+    }
+}
+
+.btn--Purplishblue{
+    background-color: $Purplishblue;
+    &:hover{
+        background-color: hsl(243, 77%, 66%);
+    }
+}

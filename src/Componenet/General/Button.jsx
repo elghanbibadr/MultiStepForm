@@ -1,10 +1,9 @@
 import React,{useContext} from 'react'
-import { AppContext } from '../../Store/AppContext';
 
-const Button = () => {
+const Button = (props) => {
   
   return (
-    <button>Button</button>
+    <button className={`btn ${props.btnClassName}`}>{props.name}</button>
   )
 }
 

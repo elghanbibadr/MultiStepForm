@@ -203,4 +203,33 @@ p {
     grid-column: 2;
   }
 }
+
+.btn {
+  padding: 14px 16px;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: .7px;
+  -webkit-transition: 0.3s ease background;
+  transition: 0.3s ease background;
+}
+
+.btn--marineBlue {
+  background-color: #02295a;
+}
+
+.btn--marineBlue:hover {
+  background-color: #1c4578;
+}
+
+.btn--Purplishblue {
+  background-color: #473dff;
+}
+
+.btn--Purplishblue:hover {
+  background-color: #6c66eb;
+}
 /*# sourceMappingURL=main.css.map */
