@@ -1,0 +1,32 @@
+
+
+
+.stepTracker{
+    background-image: url("../../../public/images/bg-sidebar-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding:  25px 10px;
+    height: 160px;
+    background-position: 0 20%;
+    @include desktop{
+        background-image: url("/public/images/bg-sidebar-desktop.svg");
+    }
+}
+
+.stepcirlce{
+    border: 1px solid white;
+    height: 35px;
+    width: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}

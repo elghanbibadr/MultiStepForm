@@ -12,7 +12,6 @@ html {
 
 body {
   background-color: #f0f6ff;
-  color: red;
 }
 
 .container {
@@ -68,5 +67,47 @@ h1, h2, h4 {
 
 p {
   color: #9699ab;
+}
+
+.stepTracker {
+  background-image: url("../../../public/images/bg-sidebar-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 10px;
+  height: 160px;
+  background-position: 0 20%;
+}
+
+@media screen and (min-width: 970px) {
+  .stepTracker {
+    background-image: url("/public/images/bg-sidebar-desktop.svg");
+  }
+}
+
+.stepcirlce {
+  border: 1px solid white;
+  height: 35px;
+  width: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
