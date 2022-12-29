@@ -7,11 +7,7 @@ function App() {
   
   return (
     <AppContextProvider>
-      <Wrraper>
-       <StepsTracker/>
-       <PersonalInfo />
-       <PaginationBar/>
-      </Wrraper>
+      <Wrraper />
      </AppContextProvider>
   )
 }

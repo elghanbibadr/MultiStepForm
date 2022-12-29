@@ -169,30 +169,38 @@ p {
   }
 }
 
-.stepsContent {
+.StepContentWrapper {
   background-color: white;
   height: 400px;
   border-radius: 10px;
   margin: 15px;
   padding: 20px;
   position: relative;
+  color: black !important;
   bottom: 70px;
   -webkit-box-shadow: 0 10px 30px rgba(204, 204, 204, 0.666);
           box-shadow: 0 10px 30px rgba(204, 204, 204, 0.666);
 }
 
 @media screen and (min-width: 970px) {
-  .stepsContent {
+  .StepContentWrapper {
     bottom: 0;
     left: -10px;
     z-index: -5555;
     height: 500px;
     margin: 0;
-    overflow: hidden;
   }
 }
 
 .paginationBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
   height: 80px;
 }
@@ -202,6 +210,20 @@ p {
     -ms-grid-column: 2;
     grid-column: 2;
   }
+}
+
+.paginationBar a {
+  text-decoration: none;
+  color: #9699ab;
+  font-size: 1.5rem;
+  font-weight: bold;
+  -webkit-transition: .4s color;
+  transition: .4s color;
+  cursor: pointer;
+}
+
+.paginationBar a:hover {
+  color: #64666d;
 }
 
 .btn {

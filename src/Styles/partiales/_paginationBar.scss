@@ -1,7 +1,21 @@
 .paginationBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: white;
     height: 80px;
-   @include desktop{
-    grid-column: 2;
-   }
+    @include desktop{
+        grid-column: 2;
+    }
+    a{
+        text-decoration: none;
+        color: $Coolgray;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: .4s color;
+        cursor: pointer;
+        &:hover{
+            color: hsl(225, 4%, 41%);
+        }
+    }
 }

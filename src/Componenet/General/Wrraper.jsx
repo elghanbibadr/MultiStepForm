@@ -1,8 +1,14 @@
 import React from 'react'
-
-const Wrraper = (props) => {
+import StepsTracker from '../StepsTracker/StepsTracker'
+import PaginationBar from '../paginationBar/PaginationBar'
+import StepContentWrapper from '../StepsContent/StepContentWrapper'
+const Wrraper = () => {
   return (
-    <div className='container'>{props.children}</div>
+    <div className='container'>
+       <StepsTracker/>
+       <StepContentWrapper />
+       <PaginationBar/>
+    </div>
   )
 }
 
