@@ -13,11 +13,12 @@ html{
 
 body{
     background-color:  $Magnolia;
+    letter-spacing: .7px;
 }
 
 .container{
     
-    max-width:110rem ;
+    max-width:100rem ;
     margin-inline: auto;
     @include desktop{
         display: grid;

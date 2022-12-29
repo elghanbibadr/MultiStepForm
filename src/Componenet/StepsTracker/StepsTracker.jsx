@@ -1,11 +1,13 @@
 import React from 'react'
 import StepsCircle from './StepsCircle'
+import { steps } from './Constant'
+
 const StepsTracker = () => {
-    const steps=[1,2,3,4]
+  
   return (
     <div className='stepTracker'>
-      {steps.map((step,index)=>{
-        return <StepsCircle key={index} number={step} />
+      {steps.map(({number,title},index)=>{
+        return <StepsCircle key={index} title={title} number={number} />
       })}
     </div>
   )

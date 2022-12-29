@@ -11,14 +11,32 @@
     height: 160px;
     background-position: 0 20%;
     @include desktop{
+        flex-direction: column;
         height: 100%;
         border-radius: 10px;
+        justify-content: start;
         background-position: 0;
         grid-row: span 2;
         background-image: url("/public/images/bg-sidebar-desktop.svg");
     }
 }
 
+
+.stepCircle-box{
+    margin-block: 20px;
+
+    p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom:4px;
+        color: $Pastelblue;
+    }
+    h3{
+        color: white;
+        font-size: 1.5rem;
+        
+    }
+}
 .stepcirlce{
     border: 1px solid white;
     height: 35px;
@@ -32,4 +50,17 @@
     font-size: 1.6rem;
     font-weight: bold;
     color: white;
+    @include desktop{
+        float: left;
+         transform: translateY(-8px);
+    }
+    
+}
+
+
+.hidden{
+    display: none;
+    @include desktop{
+        display: block;
+    }
 }
