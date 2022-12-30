@@ -23,7 +23,9 @@
     }
    }
 
-   
+
+
+  
 
     p{
         margin-top: 4px;
@@ -41,3 +43,9 @@
         width: 90%;
     }
 }
+
+
+.selectedCard-bg{
+    background-color: $Lightblue;
+    border: 2px solid  $Purplishblue;
+   }

@@ -372,4 +372,9 @@ p {
     width: 90%;
   }
 }
+
+.selectedCard-bg {
+  background-color: #bfe2fd;
+  border: 2px solid #473dff;
+}
 /*# sourceMappingURL=main.css.map */
