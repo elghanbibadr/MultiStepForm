@@ -3,7 +3,7 @@ import React from 'react'
 const AddOns = () => {
   return (
     <div>
-        <h1>Add Ons</h1>
+        <h2>Add Ons</h2>
     </div>
   )
 }

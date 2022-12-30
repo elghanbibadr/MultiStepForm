@@ -10,8 +10,8 @@ const StepContentWrapper = () => {
    return (
       <div className='StepContentWrapper'>
          {stepNumber === 1 && <PersonalInfo />}
-         {stepNumber === 2 && <AddOns />}
-         {stepNumber === 3 && <SelectPlan />}
+         {stepNumber === 2 && <SelectPlan />}
+         {stepNumber === 3 && <AddOns />}
          {stepNumber === 4 && <Summary />}
       </div>
    )

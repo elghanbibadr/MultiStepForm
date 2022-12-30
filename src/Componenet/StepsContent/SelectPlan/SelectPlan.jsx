@@ -1,10 +1,18 @@
 import React from 'react'
-
+import PlanCard from './PlanCard';
+import { plans } from './Plans';
 const SelectPlan = () => {
   return (
-    <div>
-    <h1>SelectPlan</h1>
-  </div>
+    <>
+    <h2>Select Your Plan</h2>
+    <p>You have the option of monthly or yearly billing.</p>
+    <div className='planCard-wrapper'>
+    {plans.map(({id,name,price,img},index)=>{
+      return <PlanCard key={index} id={id} name={name} price={price} img={img} />
+    })}
+    </div>
+
+  </>
   )
 }
 
