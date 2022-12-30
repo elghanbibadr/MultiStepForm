@@ -179,7 +179,7 @@ p {
   height: 400px;
   border-radius: 10px;
   margin: 15px;
-  padding: 20px;
+  padding: 30px;
   position: relative;
   color: black !important;
   bottom: 70px;
@@ -190,6 +190,7 @@ p {
 @media screen and (min-width: 970px) {
   .StepContentWrapper {
     bottom: 0;
+    padding: 60px;
     -webkit-box-shadow: none;
             box-shadow: none;
     height: 500px;
@@ -262,5 +263,47 @@ p {
 
 .btn--Purplishblue:hover {
   background-color: #6c66eb;
+}
+
+p {
+  margin-block: 20px;
+}
+
+.from-controller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.from-controller label {
+  color: #02295a;
+  font-size: 1.2rem;
+}
+
+.from-controller input {
+  margin-top: 6px;
+  outline: none;
+  border: 1px solid #9699ab;
+  border-radius: 6px;
+  padding: 14px 11px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 970px) {
+  .from-controller input {
+    width: 80%;
+  }
+}
+
+.from-controller input:focus {
+  border: 3px solid #473dff;
+  color: #02295a;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

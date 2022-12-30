@@ -1,0 +1,34 @@
+
+p{
+    margin-block: 20px;
+}
+
+.from-controller{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px; 
+
+    label{
+        color: $Marineblue;
+        font-size: 1.2rem;
+    }
+
+    input{
+        margin-top: 6px;
+        outline: none;
+        border: 1px solid $Coolgray;
+        border-radius: 6px;
+        padding:  14px 11px;
+        font-size: 1.3rem;
+        font-weight: 500;
+      
+        @include desktop{
+            width: 80%;
+        }
+    &:focus{
+        border: 3px solid $Purplishblue;
+        color: $Marineblue;
+        font-weight: bold;
+    }
+    }
+}
