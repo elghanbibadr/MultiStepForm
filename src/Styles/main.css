@@ -159,6 +159,11 @@ p {
   }
 }
 
+.circle-toggled {
+  background-color: #adbeff;
+  color: #02295a;
+}
+
 .hidden {
   display: none;
 }

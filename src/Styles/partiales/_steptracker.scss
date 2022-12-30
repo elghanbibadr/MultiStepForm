@@ -57,7 +57,10 @@
     
 }
 
-
+.circle-toggled{
+    background-color: $Pastelblue;
+    color:$Marineblue;
+}
 .hidden{
     display: none;
     @include desktop{
