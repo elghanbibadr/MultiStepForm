@@ -7,7 +7,6 @@ import Summary from './Summary/Summary'
 
 const StepContentWrapper = () => {
    const { stepNumber, setStepNumber, currentPageVisibleContent, setCurrentPageVisibleContent, personalInfoIndex, addOnsIndex, selectPlanIndex, SummaryIndex } = useContext(AppContext);
-   console.log(stepNumber);
    return (
       <div className='StepContentWrapper'>
          {stepNumber === 1 && <PersonalInfo />}
