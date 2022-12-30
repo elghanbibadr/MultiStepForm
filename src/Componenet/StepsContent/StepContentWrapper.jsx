@@ -6,16 +6,16 @@ import SelectPlan from './SelectPlan/SelectPlan'
 import Summary from './Summary/Summary'
 
 const StepContentWrapper = () => {
-    const {stepNumber,setStepNumber,currentPageVisibleContent,setCurrentPageVisibleContent,  personalInfoIndex, addOnsIndex,  selectPlanIndex, SummaryIndex}=useContext(AppContext);
-     console.log(stepNumber);
-  return (
-    <div className='StepContentWrapper'>
-        {  currentPageVisibleContent[personalInfoIndex] && <PersonalInfo />}
-       {currentPageVisibleContent[addOnsIndex] && <AddOns />}
-    { currentPageVisibleContent[selectPlanIndex] && <SelectPlan />}
-       { currentPageVisibleContent[SummaryIndex] && <Summary />}
-    </div>
-  )
+   const { stepNumber, setStepNumber, currentPageVisibleContent, setCurrentPageVisibleContent, personalInfoIndex, addOnsIndex, selectPlanIndex, SummaryIndex } = useContext(AppContext);
+   console.log(stepNumber);
+   return (
+      <div className='StepContentWrapper'>
+         {stepNumber === 1 && <PersonalInfo />}
+         {stepNumber === 2 && <AddOns />}
+         {stepNumber === 3 && <SelectPlan />}
+         {stepNumber === 4 && <Summary />}
+      </div>
+   )
 }
 
 export default StepContentWrapper

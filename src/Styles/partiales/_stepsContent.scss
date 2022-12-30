@@ -10,9 +10,14 @@
     box-shadow: 0  10px 30px rgba(204, 204, 204, 0.666);
     @include desktop{
         bottom: 0;
-        left: -10px;
-        z-index: -5555;
+        // left: -10px;
+        box-shadow: none;
+        // z-index: -5555;
         height: 500px;
         margin: 0;
     }
+}
+
+.personalInfo{
+   height: 100%;
 }

@@ -5,35 +5,24 @@ import Button from '../General/Button'
 const PaginationBar = () => {
     const {stepNumber,setStepNumber,currentPageVisibleContent,setCurrentPageVisibleContent,  personalInfoIndex, addOnsIndex,  selectPlanIndex, SummaryIndex}=useContext(AppContext);
     const handleBtnClicked=(e)=>{
-        if(e.target.id==='nextstep'){
+        if(e.target.id==='nextstep' || e.target.id==="confirm"){
           setStepNumber(prv => prv + 1);
       
         }
+      
       }
 
-      const updateStepNumber=()=>{
-        if(stepNumber>1){
-            // 
-            // 
-            // console.log(currentPageVisibleContent)
-            setCurrentPageVisibleContent(()=>{
-                currentPageVisibleContent[stepNumber]=true;
-                currentPageVisibleContent[stepNumber-1]=false;
-                return currentPageVisibleContent;
-            })
-        }
-      }
+   
 
 
-      useEffect(updateStepNumber,[stepNumber])
-
-      console.log(stepNumber)
+      
      
 
   return (
     <div className='paginationBar'>
-    { stepNumber>=2 && <a  >Go Back</a> }
-    <Button id='nextstep' handleBtnClicked={handleBtnClicked} btnClassName='btn--marineBlue' name='Next Step' />
+    { (stepNumber>=2 && stepNumber<5) && <a className='back-link'  >Go Back</a> }
+   {  stepNumber<4 && <Button id='nextstep' handleBtnClicked={handleBtnClicked} btnClassName='btn--marineBlue' name='Next Step' />}
+ { (stepNumber>=4 && stepNumber<5) && <Button id='confirm' handleBtnClicked={handleBtnClicked} btnClassName='btn--Purplishblue' name='Confirm' />}
     </div>
   )
 }
