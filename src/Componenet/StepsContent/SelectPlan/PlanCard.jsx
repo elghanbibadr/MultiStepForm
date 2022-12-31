@@ -8,7 +8,8 @@ const PlanCard = (props) => {
      <img src={props.img} alt='plan logo ' />
      <div className='planCardDesc'>
         <h4>{props.name}</h4>
-        <p>{props.price}</p>
+        {props.paymentType==="monthly" &&  <p>{props.monthlyPrice}</p>}
+        {props.paymentType==="yearly" &&  <p>{props.yearlyPrice}</p>}
      </div>
      {console.log()}
     </div>

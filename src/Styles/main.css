@@ -374,7 +374,72 @@ p {
 }
 
 .selectedCard-bg {
-  background-color: #bfe2fd;
+  background-color: #f0f6ff;
   border: 2px solid #473dff;
+}
+
+.selectedPlan-toggler-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  background-color: #fafbff;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .selectedPlan-toggler-box {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .selectedPlan-toggler-box {
+    width: 90%;
+    margin-top: 44px;
+  }
+}
+
+.toggler-wrraper {
+  background-color: #02295a;
+  width: 40px;
+  height: 24px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+}
+
+.toggler-wrraper span {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  background-color: white;
+  border-radius: inherit;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.toggler-btn-moved {
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
+}
+
+.toggled-payment {
+  color: #02295a;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

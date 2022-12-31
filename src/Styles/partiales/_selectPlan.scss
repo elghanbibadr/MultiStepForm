@@ -46,6 +46,55 @@
 
 
 .selectedCard-bg{
-    background-color: $Lightblue;
+    background-color: $Magnolia;
     border: 2px solid  $Purplishblue;
    }
+
+
+.selectedPlan-toggler-box{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+background-color: $Alabaster;
+margin-top: 20px;
+
+@include tablette{
+    width: 70%;
+}
+@include desktop{
+    width: 90%;
+    margin-top: 44px;
+}
+}
+
+.toggler-wrraper{
+    background-color: $Marineblue;
+    width: 40px;
+    height: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+
+    span{
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+        background-color: white;
+        border-radius: inherit;
+        transition: transform .4s;
+
+        
+    }
+}
+
+.toggler-btn-moved{
+    transform: translateX(90%);
+}
+
+.toggled-payment{
+    color: $Marineblue;
+    font-weight: bold;
+}

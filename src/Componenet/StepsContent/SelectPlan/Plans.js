@@ -6,22 +6,27 @@ export const plans=[
     {
     id:'plan-Arcade',
     name:'Arcade',
-    price:'$9/mo',
-    img:arcadeLogo
+    monthlyPrice:'$9/mo',
+    img:arcadeLogo,
+    yearlyPrice:'$90/mo'
     
 },
     {
     id:'plan-Advanced',
     name:'Advanced',
-    price:'$12/mo',
-    img:advancedLogo
+    monthlyPrice:'$12/mo',
+    img:advancedLogo,
+    yearlyPrice:'$120/mo'
+
 
 },
     {
     id:'plan-Pro',
     name:'Pro',
-    price:'$15/mo',
-    img:proLogo
+    monthlyPrice:'$15/mo',
+    img:proLogo,
+    yearlyPrice:'$150/mo'
+
 
     
 }
