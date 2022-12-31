@@ -178,6 +178,7 @@ p {
   background-color: white;
   border-radius: 10px;
   margin: 15px;
+  min-height: 400px;
   padding: 30px;
   position: relative;
   color: black !important;
@@ -451,5 +452,66 @@ p {
 .yearlyPrice {
   -webkit-transform: translateY(12px);
           transform: translateY(12px);
+}
+
+.AddOnsServiceCard {
+  border: 1px solid #d6d9e6;
+  margin-block: 20px;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .AddOnsServiceCard {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .AddOnsServiceCard {
+    width: 80%;
+  }
+}
+
+.AddOnsServiceCard .check-mark-box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 20px;
+  border: 1px solid #d6d9e6;
+}
+
+.AddOnsServiceCard .servicesDes {
+  width: 80%;
+}
+
+.AddOnsServiceCard .serviceDesc {
+  color: #9699ab;
+  font-size: 1.3rem;
+}
+
+.AddOnsServiceCard h5 {
+  color: #02295a;
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.AddOnsServiceCard h6 {
+  color: #02295a;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

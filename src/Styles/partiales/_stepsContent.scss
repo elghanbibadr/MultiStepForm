@@ -2,12 +2,14 @@
     background-color: white;
     border-radius: 10px;
     margin: 15px;
+    min-height: 400px;
     padding: 30px;
     position: relative;
     color: black !important;
     bottom:70px;
     box-shadow: 0  10px 30px rgba(204, 204, 204, 0.666);
 
+   
     @include desktop{
         bottom: 0;
         // left: -10px;

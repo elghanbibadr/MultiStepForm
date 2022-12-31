@@ -1,9 +1,14 @@
 import React from 'react'
-
+import AddOnsServiceCard from './AddOnsServiceCard';
+import { AddOnsServices } from './AddOnsServices';
 const AddOns = () => {
   return (
     <div>
-        <h2>Add Ons</h2>
+        <h2>Pick add-ons</h2>
+        <p>Add-ons help enhance your gaming experience.</p>
+        {AddOnsServices.map(({title,desc,extraMonthlyPrice,extYearlyPrice},index)=>{
+          return <AddOnsServiceCard key={index} title={title} desc={desc} extraMonthlyPrice={extraMonthlyPrice} extYearlyPrice={extYearlyPrice} />
+        })}
     </div>
   )
 }

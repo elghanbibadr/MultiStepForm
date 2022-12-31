@@ -1,0 +1,49 @@
+.AddOnsServiceCard{
+    border: 1px solid $Lightgray;
+    margin-block: 20px ;
+    padding: 20px 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    @include tablette{
+        width: 70%;
+    }
+
+    @include desktop{
+        width: 80%;
+    }
+    
+
+    .check-mark-box{
+        display: inline-flex;
+        height: 20px;
+        border-radius: 4px;
+        margin-right: 10px;
+        width: 20px;
+        border: 1px solid $Lightgray;
+    }
+
+    .servicesDes{
+        width: 80%;
+    }
+
+    .serviceDesc{
+        color: $Coolgray;
+        font-size: 1.3rem;
+    }
+
+    h5{
+        color: $Marineblue;
+        margin-bottom: 6px;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    h6{
+        color: $Marineblue;
+        font-size: 1.3rem;
+    }
+}
