@@ -471,6 +471,10 @@ p {
   cursor: pointer;
 }
 
+.AddOnsServiceCard:hover {
+  border-color: #473dff;
+}
+
 @media screen and (min-width: 768px) {
   .AddOnsServiceCard {
     width: 70%;
@@ -513,5 +517,16 @@ p {
 .AddOnsServiceCard h6 {
   color: #02295a;
   font-size: 1.3rem;
+}
+
+.selectedService {
+  background-color: #f0f6ff;
+}
+
+.addCheckMark {
+  background-color: #473dff;
+  background-image: url("../../../public/images/icon-checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */

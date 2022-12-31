@@ -8,6 +8,11 @@
     justify-content: space-between;
     cursor: pointer;
 
+    &:hover{
+        border-color: $Purplishblue;
+    }
+
+ 
     @include tablette{
         width: 70%;
     }
@@ -46,4 +51,16 @@
         color: $Marineblue;
         font-size: 1.3rem;
     }
+}
+
+
+.selectedService{
+ background-color: $Magnolia;
+}
+
+.addCheckMark{
+  background-color: $Purplishblue;
+  background-image: url('../../../public/images/icon-checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
