@@ -9,9 +9,14 @@ const PlanCard = (props) => {
      <div className='planCardDesc'>
         <h4>{props.name}</h4>
         {props.paymentType==="monthly" &&  <p>{props.monthlyPrice}</p>}
-        {props.paymentType==="yearly" &&  <p>{props.yearlyPrice}</p>}
+        {
+        props.paymentType==="yearly" &&
+        <>
+        <p className='yearlyPrice'>{props.yearlyPrice}</p>
+         <p className='two-monthfree-txt'>2 month for free</p>
+        </> 
+        }
      </div>
-     {console.log()}
     </div>
   )
 }

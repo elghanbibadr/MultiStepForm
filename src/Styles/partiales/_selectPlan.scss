@@ -18,8 +18,9 @@
    img{
     margin-right: 14px;
     height: 40px;
+
     @include desktop{
-        margin: 0;
+        margin-bottom: 8px;
     }
    }
 
@@ -97,4 +98,14 @@ margin-top: 20px;
 .toggled-payment{
     color: $Marineblue;
     font-weight: bold;
+}
+
+
+.two-monthfree-txt{
+    font-size: 1.2rem;
+    color: $Marineblue;
+}
+
+.yearlyPrice{
+    transform: translateY(12px);
 }

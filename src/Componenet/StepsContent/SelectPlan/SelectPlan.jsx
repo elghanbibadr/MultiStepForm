@@ -4,8 +4,7 @@ import PlanCard from './PlanCard';
 import { plans } from './Plans';
 const SelectPlan = () => {
 
-  const {setSelectedPlan}=useContext(AppContext)
-  const [paymentTerms,setPaymentTerms]=useState('monthly');
+  const {setSelectedPlan,paymentTerms,setPaymentTerms}=useContext(AppContext)
 
   const handleSelectedPlane=(e)=>{
     setSelectedPlan(e.currentTarget.id)
@@ -25,9 +24,9 @@ const handlePaymentTermsBoxClicked=()=>{
       return <PlanCard paymentType={paymentTerms} handleCardClicked={handleSelectedPlane} key={index} id={id} name={name} monthlyPrice={monthlyPrice} yearlyPrice={yearlyPrice} img={img} />
     })}
     </div>
-    <div onClick={handlePaymentTermsBoxClicked} className='selectedPlan-toggler-box'>
+    <div  className='selectedPlan-toggler-box'>
       <p className={`monthly-text ${paymentTerms==='monthly' ? "toggled-payment":""}`}>Monthly</p>
-      <div className='toggler-wrraper'><span className={`toggler-btn ${paymentTerms==='yearly' ? 'toggler-btn-moved':''}`} ></span></div>
+      <div onClick={handlePaymentTermsBoxClicked} className='toggler-wrraper'><span className={`toggler-btn ${paymentTerms==='yearly' ? 'toggler-btn-moved':''}`} ></span></div>
       <p  className={`yearly-text ${paymentTerms==='yearly' ? "toggled-payment":""}`}>yearly</p>
     </div>
   </>

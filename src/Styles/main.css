@@ -347,7 +347,7 @@ p {
 
 @media screen and (min-width: 970px) {
   .planCard img {
-    margin: 0;
+    margin-bottom: 8px;
   }
 }
 
@@ -441,5 +441,15 @@ p {
 .toggled-payment {
   color: #02295a;
   font-weight: bold;
+}
+
+.two-monthfree-txt {
+  font-size: 1.2rem;
+  color: #02295a;
+}
+
+.yearlyPrice {
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 /*# sourceMappingURL=main.css.map */
