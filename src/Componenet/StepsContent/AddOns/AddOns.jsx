@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AddOnsServiceCard from './AddOnsServiceCard';
 import { AddOnsServices } from './AddOnsServices';
 const AddOns = () => {
+
   return (
     <div>
         <h2>Pick add-ons</h2>

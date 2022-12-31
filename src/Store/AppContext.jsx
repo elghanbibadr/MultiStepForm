@@ -7,7 +7,7 @@ export const AppContextProvider = ({ children }) => {
    const [personalInfoFormIsValid,setPersonalInfoFormIsValid]=useState(false)
    const [selectedPlan,setSelectedPlan]=useState('plan-Arcade');
    const [paymentTerms,setPaymentTerms]=useState('monthly');
-
+   const [selectedAddOns,setSelectedAddOns]=useState([]);
     const value = {
         stepNumber,
         setStepNumber,
@@ -16,7 +16,9 @@ export const AppContextProvider = ({ children }) => {
         selectedPlan,
         setSelectedPlan,
         paymentTerms,
-        setPaymentTerms
+        setPaymentTerms,
+        selectedAddOns,
+        setSelectedAddOns
     }
 
     return <AppContext.Provider value={value} >{children}</AppContext.Provider>
