@@ -1,25 +1,23 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { AppContext } from '../../../Store/AppContext'
 
 const AddOnsServiceCard = (props) => {
-    const { selectedAddOns, setSelectedAddOns } = useContext(AppContext)
-    const [serviceClicked, setServiceClicked] = useState(false);
+    const { selectedAddOns, setSelectedAddOns ,paymentTerms } = useContext(AppContext)
 
-    const { paymentTerms } = useContext(AppContext);
 
     const handleServiceClicked = () => {
-        setServiceClicked(prv => !prv)
-        if (selectedAddOns.find(element => element.serviceName === props.title))
-            selectedAddOns.splice(selectedAddOns.findIndex(obj => obj.serviceName === props.title), 1)
-        else setSelectedAddOns(prv => [{ serviceName: props.title ,termsPay:paymentTerms ,extraPrice: paymentTerms==="monthly" ? props.extraMonthlyPrice:props.extraYearlyPrice },...prv])
+        if (selectedAddOns.find(element => element.serviceName === props.title)){
+             setSelectedAddOns(prv =>  prv.splice(prv.findIndex(obj => obj.serviceName === props.title),1))
+        }
+        else{
+            setSelectedAddOns(prv => [...prv,{ serviceName: props.title ,termsPay:paymentTerms ,extraPrice: paymentTerms==="monthly" ? props.extraMonthlyPrice:props.extraYearlyPrice }])
+        }
   
-    }
+}
 
-
-
-    return (
-        <div onClick={handleServiceClicked} className={`${serviceClicked ? 'selectedService' : ''} AddOnsServiceCard`}>
-            <span className={`${serviceClicked ? "addCheckMark" : ''}  check-mark-box`}></span>
+return (
+    <div onClick={handleServiceClicked} className={`${selectedAddOns.some(obj => obj.serviceName === props.title) ? 'selectedService' : ''} AddOnsServiceCard`} >
+            <span className={`${selectedAddOns.some(obj => obj.serviceName === props.title) ? "addCheckMark" : ''}  check-mark-box`}></span>
             <div className='servicesDes'>
                 <h5>{props.title}</h5>
                 <span className='serviceDesc'> {props.desc}</span>

@@ -8,6 +8,7 @@ export const AppContextProvider = ({ children }) => {
    const [selectedPlan,setSelectedPlan]=useState('plan-Arcade');
    const [paymentTerms,setPaymentTerms]=useState('monthly');
    const [selectedAddOns,setSelectedAddOns]=useState([]);
+
     const value = {
         stepNumber,
         setStepNumber,
@@ -18,7 +19,8 @@ export const AppContextProvider = ({ children }) => {
         paymentTerms,
         setPaymentTerms,
         selectedAddOns,
-        setSelectedAddOns
+        setSelectedAddOns,
+       
     }
 
     return <AppContext.Provider value={value} >{children}</AppContext.Provider>
