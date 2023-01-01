@@ -16,7 +16,6 @@ const AddOnsServiceCard = (props) => {
   
 }
 
-console.log(selectedAddOns)
 
 return (
     <div onClick={handleServiceClicked} className={`${selectedAddOns.some(obj => obj.serviceName === props.title) ? 'selectedService' : ''} AddOnsServiceCard`} >
