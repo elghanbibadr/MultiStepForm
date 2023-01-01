@@ -3,9 +3,9 @@ import { createContext, useState } from "react";
 export const AppContext = createContext(null);
 
 export const AppContextProvider = ({ children }) => {
-    const [stepNumber, setStepNumber] = useState(3);
+    const [stepNumber, setStepNumber] = useState(4);
    const [personalInfoFormIsValid,setPersonalInfoFormIsValid]=useState(false)
-   const [selectedPlan,setSelectedPlan]=useState('plan-Arcade');
+   const [selectedPlan,setSelectedPlan]=useState('Arcade');
    const [paymentTerms,setPaymentTerms]=useState('monthly');
    const [selectedAddOns,setSelectedAddOns]=useState([]);
 

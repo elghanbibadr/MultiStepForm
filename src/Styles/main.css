@@ -529,4 +529,34 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.summary-result {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafbff;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.summary-result h4 {
+  margin-bottom: 5px;
+}
+
+.summary-result a {
+  text-decoration: none;
+  color: #9699ab;
+  font-size: 1.1rem;
+}
+
+.summary-result .price {
+  color: #02295a;
+  font-size: 1.3rem;
+  font-weight: bold;
+  justify-self: flex-end;
+}
 /*# sourceMappingURL=main.css.map */
