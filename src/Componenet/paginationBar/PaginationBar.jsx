@@ -3,7 +3,7 @@ import { AppContext } from '../../Store/AppContext';
 import Button from '../General/Button'
 
 const PaginationBar = () => {
-  const { stepNumber, setStepNumber,personalInfoFormIsValid } = useContext(AppContext);
+  const { stepNumber, setStepNumber,setIsUserConfirm,personalInfoFormIsValid } = useContext(AppContext);
   const handleBtnClicked = (e) => {
 
     if (e.target.id === 'nextstep') {
@@ -11,7 +11,8 @@ const PaginationBar = () => {
         setStepNumber(prv => prv + 1);
       }
       if (e.target.id === 'confirm') {
-      setStepNumber(4)
+   setStepNumber(4)    
+    setIsUserConfirm(true)  
     }
   }
   

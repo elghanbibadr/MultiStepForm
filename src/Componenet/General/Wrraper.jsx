@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import StepsTracker from '../StepsTracker/StepsTracker'
 import PaginationBar from '../paginationBar/PaginationBar'
 import StepContentWrapper from '../StepsContent/StepContentWrapper'
+import { AppContext } from '../../Store/AppContext'
 const Wrraper = () => {
+  const {setIsUserConfirm,isUserConfirm}=useContext(AppContext)
   return (
     <div className='container'>
        <StepsTracker/>
        <StepContentWrapper />
-       <PaginationBar/>
+        {!isUserConfirm &&  <PaginationBar/>}
     </div>
   )
 }
