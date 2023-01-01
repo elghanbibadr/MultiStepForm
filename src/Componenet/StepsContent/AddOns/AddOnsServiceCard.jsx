@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { AppContext } from '../../../Store/AppContext'
+import { AddOnsServices } from './AddOnsServices'
 
 const AddOnsServiceCard = (props) => {
     const { selectedAddOns, setSelectedAddOns ,paymentTerms } = useContext(AppContext)
-
+    
 
     const handleServiceClicked = () => {
         if (selectedAddOns.find(element => element.serviceName === props.title)){
@@ -14,6 +15,8 @@ const AddOnsServiceCard = (props) => {
         }
   
 }
+
+console.log(selectedAddOns)
 
 return (
     <div onClick={handleServiceClicked} className={`${selectedAddOns.some(obj => obj.serviceName === props.title) ? 'selectedService' : ''} AddOnsServiceCard`} >

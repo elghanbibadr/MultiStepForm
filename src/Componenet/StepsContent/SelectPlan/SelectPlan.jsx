@@ -4,7 +4,7 @@ import PlanCard from './PlanCard';
 import { plans } from './Plans';
 const SelectPlan = () => {
 
-  const {setSelectedPlan,paymentTerms,setPaymentTerms}=useContext(AppContext)
+  const {setSelectedPlan,paymentTerms,setPaymentTerms,setSelectedAddOns}=useContext(AppContext)
 
   const handleSelectedPlane=(e)=>{
     setSelectedPlan(e.currentTarget.id)
@@ -12,7 +12,7 @@ const SelectPlan = () => {
 
 const handlePaymentTermsBoxClicked=()=>{
    paymentTerms==="monthly" ? setPaymentTerms('yearly') :setPaymentTerms('monthly');
-   console.log(paymentTerms)
+   setSelectedAddOns([]);
 }
 
 

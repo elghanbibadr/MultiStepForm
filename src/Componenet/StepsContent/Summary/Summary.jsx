@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../../../Store/AppContext'
 import { plans } from '../SelectPlan/Plans';
 
@@ -7,13 +7,20 @@ const Summary = () => {
   const {monthlyPrice,yearlyPrice}= plans.find(plan=>plan.id===selectedPlan);
   const planPrice=paymentTerms==='monthly'  ? monthlyPrice :yearlyPrice;
   const [total,setTotal]=useState(planPrice)
-  if (selectedAddOns.length!==0){
-    const reducedString=selectedAddOns.reduce((a,b)=>a.extraPrice +b.extraPrice)+planPrice;
-    const reducedPrice=reducedString.match(/\d+/g).map(Number).reduce((a,b)=>a+b,0)
-     setTotal(reducedPrice);
-  }
 
-console.log(total)
+
+
+  useEffect(()=>{
+    if (selectedAddOns.length!==0){
+      const reducedString=selectedAddOns.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue.extraPrice 
+      } ,0) + planPrice; 
+       const reducedPrice=reducedString.match(/\d+/g).map(Number).reduce((a,b)=>a+b,0)
+  
+       setTotal(`$${reducedPrice}/${paymentTerms==='monthly' ? "mo" :"yr"}`);
+    }
+  },[])
+
   return (
     <div>
     <h2>Finishing up</h2>
