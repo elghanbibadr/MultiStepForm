@@ -4,7 +4,8 @@ import PaginationBar from '../paginationBar/PaginationBar'
 import StepContentWrapper from '../StepsContent/StepContentWrapper'
 import { AppContext } from '../../Store/AppContext'
 const Wrraper = () => {
-  const {setIsUserConfirm,isUserConfirm}=useContext(AppContext)
+  const {isUserConfirm}=useContext(AppContext)
+  
   return (
     <div className='container'>
        <StepsTracker/>

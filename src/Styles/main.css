@@ -84,7 +84,7 @@ p {
 }
 
 .stepTracker {
-  background-image: url("../../../public/images/bg-sidebar-mobile.svg");
+  background-image: url("../../../public/assets/bg-sidebar-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -111,7 +111,7 @@ p {
             justify-content: start;
     background-position: 0;
     grid-row: span 2;
-    background-image: url("/public/images/bg-sidebar-desktop.svg");
+    background-image: url("/public/assets/bg-sidebar-desktop.svg");
   }
 }
 
@@ -558,7 +558,7 @@ p {
 
 .addCheckMark {
   background-color: #473dff;
-  background-image: url("../../../public/images/icon-checkmark.svg");
+  background-image: url("../../../public/assets/icon-checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -7,7 +7,7 @@ import Summary from './Summary/Summary'
 import ThankYou from './Summary/ThankYou'
 
 const StepContentWrapper = () => {
-   const { stepNumber, setStepNumber,isUserConfirm, currentPageVisibleContent, setCurrentPageVisibleContent, personalInfoIndex, addOnsIndex, selectPlanIndex, SummaryIndex } = useContext(AppContext);
+   const { stepNumber,isUserConfirm } = useContext(AppContext);
    return (
       <div className='StepContentWrapper'>
          {stepNumber === 1 && <PersonalInfo />}

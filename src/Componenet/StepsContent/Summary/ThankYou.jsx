@@ -1,5 +1,5 @@
 import React from 'react'
-import thankULogo from "../../../../public/images/icon-thank-you.svg"
+import thankULogo from "../../../../public/assets/icon-thank-you.svg"
 const ThankYou = () => {
   return (
     <div className='thankYouBox'>

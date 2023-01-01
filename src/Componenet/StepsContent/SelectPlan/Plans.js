@@ -1,6 +1,6 @@
-import arcadeLogo from '../../../../public/images/icon-arcade.svg'
-import proLogo from '../../../../public/images/icon-pro.svg'
-import advancedLogo from '../../../../public/images/icon-advanced.svg'
+import arcadeLogo from '../../../../public/assets/icon-arcade.svg'
+import proLogo from '../../../../public/assets/icon-pro.svg'
+import advancedLogo from '../../../../public/assets/icon-advanced.svg'
 
 export const plans=[
     {

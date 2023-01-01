@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext} from 'react'
 import { AppContext } from '../../Store/AppContext';
 import Button from '../General/Button'
 
 const PaginationBar = () => {
-  const { stepNumber, setStepNumber,setIsUserConfirm,personalInfoFormIsValid } = useContext(AppContext);
+  const { stepNumber, setStepNumber,setIsUserConfirm } = useContext(AppContext);
   const handleBtnClicked = (e) => {
 
     if (e.target.id === 'nextstep') {
