@@ -8,8 +8,11 @@
     cursor: pointer;
     letter-spacing: .7px;
     transition: 0.3s ease background;
+    @media  screen and (max-width:$tablette) {
+        padding: 9px;
+        font-weight: normal;
 }
-
+}
 
 
 .btn--marineBlue{

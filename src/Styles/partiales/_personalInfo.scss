@@ -21,6 +21,9 @@ p{
         padding:  14px 11px;
         font-size: 1.3rem;
         font-weight: 500;
+        @include tablette{
+            width: 70%;
+        }
       
         @include desktop{
             width: 80%;

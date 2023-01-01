@@ -3,7 +3,7 @@ import { AppContext } from '../../../Store/AppContext'
 import { plans } from '../SelectPlan/Plans';
 
 const Summary = () => {
-  const {selectedAddOns,selectedPlan,paymentTerms}=useContext(AppContext);
+  const {selectedAddOns,selectedPlan,paymentTerms,setStepNumber}=useContext(AppContext);
   const {monthlyPrice,yearlyPrice}= plans.find(plan=>plan.id===selectedPlan);
   const planPrice=paymentTerms==='monthly'  ? monthlyPrice :yearlyPrice;
   const [total,setTotal]=useState(planPrice)
@@ -21,6 +21,8 @@ const Summary = () => {
     }
   },[])
 
+  const handleOnChangeLinkClicked=()=>setStepNumber(2)
+
   return (
     <div>
     <h2>Finishing up</h2>
@@ -28,7 +30,7 @@ const Summary = () => {
     <div className='summary-result'>
       <div className="summery-planInfo">
         <h4>{selectedPlan} ({paymentTerms})</h4>
-        <a href='#' >Change</a>
+        <a onClick={handleOnChangeLinkClicked} href='#' >Change</a>
       </div>
       <span className='price'>{planPrice}</span>
       {selectedAddOns.map(({serviceName,extraPrice})=>{

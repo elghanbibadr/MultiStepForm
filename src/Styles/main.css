@@ -13,6 +13,7 @@ html {
 body {
   background-color: #f0f6ff;
   letter-spacing: .7px;
+  overflow-x: hidden !important;
 }
 
 .container {
@@ -186,6 +187,12 @@ p {
           box-shadow: 0 10px 30px rgba(204, 204, 204, 0.666);
 }
 
+@media screen and (min-width: 768px) {
+  .StepContentWrapper {
+    padding-left: 100px;
+  }
+}
+
 @media screen and (min-width: 970px) {
   .StepContentWrapper {
     bottom: 0;
@@ -214,6 +221,16 @@ p {
   height: 80px;
 }
 
+@media screen and (max-width: 970px) {
+  .paginationBar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+  }
+}
+
 @media screen and (min-width: 970px) {
   .paginationBar {
     -ms-grid-column: 2;
@@ -235,6 +252,10 @@ p {
   color: #64666d;
 }
 
+body {
+  position: relative;
+}
+
 .btn {
   padding: 14px 16px;
   border: 0;
@@ -246,6 +267,13 @@ p {
   letter-spacing: .7px;
   -webkit-transition: 0.3s ease background;
   transition: 0.3s ease background;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 9px;
+    font-weight: normal;
+  }
 }
 
 .btn--marineBlue {
@@ -292,6 +320,12 @@ p {
   padding: 14px 11px;
   font-size: 1.3rem;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .from-controller input {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 970px) {
@@ -551,6 +585,12 @@ p {
   text-decoration: none;
   color: #9699ab;
   font-size: 1.1rem;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.summary-result a:hover {
+  color: #473dff;
 }
 
 .summary-result .price {

@@ -4,6 +4,13 @@
     align-items: center;
     background-color: white;
     height: 80px;
+    @media screen and (max-width:$desktop) {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 60px;
+    }
     @include desktop{
         grid-column: 2;
     }
@@ -18,4 +25,8 @@
             color: hsl(225, 4%, 41%);
         }
     }
+}
+
+body{
+    position: relative;
 }
