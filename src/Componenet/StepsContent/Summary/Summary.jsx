@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../../../Store/AppContext'
+import { plans } from '../SelectPlan/Plans';
 
 const Summary = () => {
   const {selectedAddOns,selectedPlan,paymentTerms}=useContext(AppContext);
-
+  const {monthlyPrice,yearlyPrice}= plans.find(plan=>plan.id===selectedPlan);
   return (
     <div>
     <h2>Finishing up</h2>
@@ -13,11 +14,10 @@ const Summary = () => {
         <h4>{selectedPlan} ({paymentTerms})</h4>
         <a href='#' >Change</a>
       </div>
-      <span className='price'>$9/mo</span>
+      <span className='price'>{paymentTerms==='monthly'  ? monthlyPrice :yearlyPrice}</span>
       {selectedAddOns.map(({serviceName,extraPrice})=>{
         return (
           <>
-          {console.log(selectedAddOns)}
           <p >{serviceName}</p>
           <span className='price'>{extraPrice}</span>
           </>

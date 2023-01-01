@@ -10,7 +10,8 @@ const AddOnsServiceCard = (props) => {
              setSelectedAddOns(prv =>  prv.splice(prv.findIndex(obj => obj.serviceName === props.title),1))
         }
         else{
-            setSelectedAddOns(prv => [...prv,{ serviceName: props.title ,termsPay:paymentTerms ,extraPrice: paymentTerms==="monthly" ? props.extraMonthlyPrice:props.extraYearlyPrice }])
+            setSelectedAddOns(prv => [...prv,{ serviceName: props.title ,termsPay:paymentTerms ,extraPrice: paymentTerms==="yearly" ? props.extraYearlyPrice : props.extraMonthlyPrice}])
+            console.log(props.extraYearlyPrice)
         }
   
 }

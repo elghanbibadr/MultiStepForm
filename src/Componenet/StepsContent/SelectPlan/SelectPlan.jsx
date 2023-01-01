@@ -12,6 +12,7 @@ const SelectPlan = () => {
 
 const handlePaymentTermsBoxClicked=()=>{
    paymentTerms==="monthly" ? setPaymentTerms('yearly') :setPaymentTerms('monthly');
+   console.log(paymentTerms)
 }
 
 
