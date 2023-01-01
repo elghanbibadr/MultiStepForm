@@ -11,7 +11,6 @@ const AddOnsServiceCard = (props) => {
         }
         else{
             setSelectedAddOns(prv => [...prv,{ serviceName: props.title ,termsPay:paymentTerms ,extraPrice: paymentTerms==="yearly" ? props.extraYearlyPrice : props.extraMonthlyPrice}])
-            console.log(props.extraYearlyPrice)
         }
   
 }

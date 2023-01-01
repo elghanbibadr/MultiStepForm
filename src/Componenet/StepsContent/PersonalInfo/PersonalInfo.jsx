@@ -20,7 +20,6 @@ const PersonalInfo = () => {
 
   const handleFormSubmited=(e)=>{
       e.preventDefault();
-      console.log('ypp');
       validate();
       if(userName && email &&  phoneNumber && !isNaN(phoneNumber))   setFormIsValid(true)
       if (formIsValid){
